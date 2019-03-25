@@ -15,6 +15,7 @@
         </activity>
 
 
+
         <activity android:name=".LoginActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -23,6 +24,9 @@
             </intent-filter>
         </activity>
 
+        <activity
+            android:name=".StartSearch" android:label="Start Search">
+        </activity>
 
         <activity android:name=".RegisterActivity">
             <meta-data
@@ -31,5 +35,6 @@
         </activity>
 
     </application>
+    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>
