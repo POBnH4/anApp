@@ -25,7 +25,6 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
-
     }
 
     /** Set up all variables method, making the code more compact**/

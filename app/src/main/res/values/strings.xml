@@ -6,4 +6,18 @@
     <string name="email">Email</string>
     <string name="sign_up">Sign Up</string>
     <string name="cancel">Cancel</string>
+    <string name="tv_Welcome">Welcome!</string>
+    <string name="btn_NewPickUp">Begin new pick up...</string>
+    <string name="tv_Upgrade">Want the offline version? Upgrade to premium...</string>
+    <string name="Tv_StartPlace" />
+    <string name="tv_StartPlace">Enter your starting location:</string>
+    <string name="btn_Next">Next</string>
+    <string name="tv_FlightNumber">Enter your flight number:</string>
+    <string name="btn_FlightSearch">Next</string>
+    <string name="tv_flightLandTime">Flight lands at:</string>
+    <string name="tv_YourArrival">You will arrive at:</string>
+    <string name="tv_FlightTime"><![CDATA[<placeholder>]]></string>
+    <string name="tv_ArrivalTime"><![CDATA[<placeholder>]]></string>
+    <string name="tv_Directions"><![CDATA[<placeholder>]]></string>
+
 </resources>

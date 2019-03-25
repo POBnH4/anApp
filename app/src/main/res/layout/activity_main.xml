@@ -7,4 +7,35 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
+    <TextView
+        android:id="@+id/tv_Welcome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="8dp"
+        android:layout_marginTop="8dp"
+        android:text="@string/tv_Welcome"
+        app:layout_constraintBottom_toTopOf="@+id/btn_NewPickUp"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.021"
+        tools:layout_editor_absoluteX="34dp" />
+
+    <Button
+        android:id="@+id/btn_NewPickUp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="208dp"
+        android:text="@string/btn_NewPickUp"
+        app:layout_constraintBottom_toTopOf="@+id/tv_Upgrade"
+        tools:layout_editor_absoluteX="118dp"
+        tools:textAllCaps="false" />
+
+    <TextView
+        android:id="@+id/tv_Upgrade"
+        android:layout_width="170dp"
+        android:layout_height="44dp"
+        android:layout_marginBottom="8dp"
+        android:text="@string/tv_Upgrade"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:layout_editor_absoluteX="198dp" />
 </android.support.constraint.ConstraintLayout>
