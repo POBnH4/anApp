@@ -41,6 +41,12 @@ public class SkyscannerAPI {
 //                    .asJson();
 
             //System.out.println();
+
+            HttpResponse<JsonNode> response = Unirest.post(API_URL)
+                    .header("X-RapidAPI-Key", API_KEY)
+                    .queryString("parameter", "value")
+                    .field("parameter", "value")
+                    .asJson();
         }catch(Exception e){
             e.printStackTrace();
         }

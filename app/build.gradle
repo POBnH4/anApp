@@ -40,6 +40,7 @@ dependencies {
     implementation 'com.android.support:design:28.0.0'
     implementation 'com.android.support:recyclerview-v7:28.0.0'
     
+    // may have to comment out the compile stuff 
     compile group: 'org.json', name: 'json', version: '20180813'
     compile group: 'cz.msebera.android', name: 'httpclient', version: '4.3.6'
     compile group: 'org.apache.httpcomponents', name: 'httpasyncclient', version: '4.0.2'
