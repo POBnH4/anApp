@@ -25,6 +25,10 @@ public class LoginActivity extends AppCompatActivity implements OnClickListener 
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
         init();
+
+        final String DEFAULT_AIRPORT = "EDI";
+        AviationEdge aviationEdge = new AviationEdge(DEFAULT_AIRPORT, getApplicationContext());
+        aviationEdge.implementAPI(DEFAULT_AIRPORT, getApplicationContext());
     }
 
     /** Set up all variables method, making the code more compact**/

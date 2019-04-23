@@ -9,7 +9,7 @@
     <string name="tv_Welcome">Welcome!</string>
     <string name="btn_NewPickUp">Begin new pick up...</string>
     <string name="tv_Upgrade">Want the offline version? Upgrade to premium...</string>
-    <string name="Tv_StartPlace" />
+    <string name="Tv_StartPlace"/>
     <string name="tv_StartPlace">Enter your starting location:</string>
     <string name="btn_Next">Next</string>
     <string name="tv_FlightNumber">Enter your flight number:</string>
