@@ -39,6 +39,7 @@ class AviationEdge {
 
     @SuppressLint("StaticFieldLeak")
     private class FlightsCaller extends AsyncTask<String, Void, String> {
+
         /**
          * Take url and pass forward;
          */

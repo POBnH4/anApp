@@ -7,45 +7,83 @@
         android:layout_height="match_parent"
         tools:context=".MainActivity">
 
-    <TextView
-        android:id="@+id/tv_Welcome"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="8dp"
-        android:text="@string/tv_Welcome"
-        app:layout_constraintBottom_toTopOf="@+id/btn_NewPickUp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.117"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintVertical_bias="0.0" />
-
+    <com.google.android.gms.maps.MapView
+            android:layout_width="412dp"
+            android:layout_height="510dp"
+            android:id="@+id/mapView2"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintBottom_toBottomOf="parent"/>
     <Button
-        android:id="@+id/btn_NewPickUp"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginBottom="208dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/btn_NewPickUp"
-        app:layout_constraintBottom_toTopOf="@+id/tv_Upgrade"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        tools:textAllCaps="false" />
+            android:id="@+id/btn_NewPickUp"
+            android:layout_width="104dp"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="8dp"
+            android:text="Pick up!"
+            app:layout_constraintEnd_toEndOf="parent"
+            tools:textAllCaps="false" android:layout_marginTop="8dp" app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintStart_toEndOf="@+id/flightField"
+            android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.692"
+            android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/departure"
+            app:layout_constraintVertical_bias="0.68"/>
 
     <TextView
-        android:id="@+id/tv_Upgrade"
-        android:layout_width="170dp"
-        android:layout_height="44dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="@string/tv_Upgrade"
-        android:textStyle="italic"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.959"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/tv_Upgrade"
+            android:layout_width="170dp"
+            android:layout_height="44dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:text="@string/tv_Upgrade"
+            android:textStyle="italic"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.959"
+            app:layout_constraintStart_toStartOf="parent"/>
+    <EditText
+            android:layout_width="wrap_content"
+            android:layout_height="41dp"
+            android:inputType="textLongMessage|textPersonName"
+            android:text="EK4045"
+            android:ems="10"
+            android:id="@+id/flightField" android:layout_marginStart="52dp"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="32dp"
+            app:layout_constraintTop_toTopOf="parent"
+    />
+    <TextView
+            android:text="Scheduled Departure: 20:00"
+            android:layout_width="178dp"
+            android:layout_height="20dp"
+            android:id="@+id/departure"
+            android:layout_marginTop="24dp"
+            app:layout_constraintTop_toBottomOf="@+id/flightField" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.497"/>
+    <TextView
+            android:text="Scheduled Arrival: 22:15"
+            android:layout_width="160dp"
+            android:layout_height="21dp"
+            android:id="@+id/arrival" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="112dp"
+            android:layout_marginBottom="12dp"
+            app:layout_constraintBottom_toTopOf="@+id/delay"
+            android:layout_marginEnd="8dp" app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.128" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/departure"/>
+    <TextView
+            android:text="Flight delay 14 minutes"
+            android:layout_width="153dp"
+            android:layout_height="19dp"
+            android:id="@+id/delay"
+            app:layout_constraintBottom_toTopOf="@+id/onYourWay" app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginStart="8dp" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.504" android:layout_marginBottom="12dp"/>
+    <TextView
+            android:text="Time to go in 4 minutes"
+            android:layout_width="156dp"
+            android:layout_height="18dp"
+            android:id="@+id/onYourWay" app:layout_constraintStart_toStartOf="parent" android:layout_marginStart="8dp"
+            app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.51" android:layout_marginBottom="20dp"
+            app:layout_constraintBottom_toTopOf="@+id/mapView2"/>
 </android.support.constraint.ConstraintLayout>
