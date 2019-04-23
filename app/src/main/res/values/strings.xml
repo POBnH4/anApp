@@ -1,5 +1,5 @@
 <resources>
-    <string name="app_name">TimeToGo</string>
+    <string name="app_name">Time to go</string>
     <string name="username">Username</string>
     <string name="password">Password</string>
     <string name="confirm_password">Confirm Password</string>
