@@ -5,17 +5,20 @@
         xmlns:app="http://schemas.android.com/apk/res-auto"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        tools:context=".MainActivity">
+        tools:context=".MainActivity"
+        android:id="@+id/mainLayout"
+        android:background="#55BED7">
 
     <com.google.android.gms.maps.MapView
-        android:id="@+id/mapView2"
-        android:layout_width="412dp"
-        android:layout_height="299dp"
-        android:layout_marginStart="8dp"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="1.0"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/mapView2"
+            android:layout_width="412dp"
+            android:layout_height="562dp"
+            android:layout_marginStart="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="1.0"
+            app:layout_constraintStart_toStartOf="parent" android:layout_marginTop="8dp"
+            app:layout_constraintTop_toBottomOf="@+id/onYourWay"/>
     <Button
             android:id="@+id/btn_NewPickUp"
             android:layout_width="104dp"
@@ -27,7 +30,11 @@
             app:layout_constraintStart_toEndOf="@+id/flightField"
             android:layout_marginStart="8dp" app:layout_constraintHorizontal_bias="0.692"
             android:layout_marginBottom="8dp" app:layout_constraintBottom_toTopOf="@+id/departure"
-            app:layout_constraintVertical_bias="0.68"/>
+            app:layout_constraintVertical_bias="0.68"
+            android:background="#FFFFFF"
+
+
+    />
 
     <TextView
             android:id="@+id/tv_Upgrade"
@@ -53,55 +60,87 @@
     />
 
     <TextView
-        android:id="@+id/departure"
-        android:layout_width="178dp"
-        android:layout_height="20dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:layout_marginTop="12dp"
-        android:text="Scheduled Departure: 20:00"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/flightField" />
+            android:id="@+id/departure"
+            android:layout_width="178dp"
+            android:layout_height="19dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="8dp"
+            android:layout_marginTop="4dp"
+            android:text="Flight Scheduled Departure"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/flightField" app:layout_constraintHorizontal_bias="0.364"/>
 
     <TextView
-        android:id="@+id/arrival"
-        android:layout_width="160dp"
-        android:layout_height="21dp"
-        android:layout_marginBottom="12dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="112dp"
-        android:layout_marginTop="8dp"
-        android:text="Scheduled Arrival: 22:15"
-        app:layout_constraintBottom_toTopOf="@+id/delay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.0"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/departure"
-        app:layout_constraintVertical_bias="0.0" />
+            android:id="@+id/arrival"
+            android:layout_width="155dp"
+            android:layout_height="20dp"
+            android:layout_marginBottom="12dp"
+            android:layout_marginEnd="8dp"
+            android:layout_marginStart="16dp"
+            android:layout_marginTop="8dp"
+            android:text="Flight Scheduled Arrival"
+            app:layout_constraintBottom_toTopOf="@+id/delay"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.306"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@+id/departure"
+            app:layout_constraintVertical_bias="1.0"/>
 
     <TextView
-        android:id="@+id/delay"
-        android:layout_width="153dp"
-        android:layout_height="19dp"
-        android:layout_marginBottom="8dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Flight delay 14 minutes"
-        app:layout_constraintBottom_toTopOf="@+id/onYourWay"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.502"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/delay"
+            android:layout_width="88dp"
+            android:layout_height="18dp"
+            android:layout_marginStart="8dp"
+            android:text="Flight delay 14 minutes"
+            app:layout_constraintBottom_toTopOf="@+id/onYourWay"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toStartOf="@+id/flightDelayNumber" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.901"/>
 
     <TextView
-        android:id="@+id/onYourWay"
-        android:layout_width="156dp"
-        android:layout_height="18dp"
-        android:layout_marginBottom="24dp"
-        android:layout_marginEnd="8dp"
-        android:layout_marginStart="8dp"
-        android:text="Time to go in 4 minutes"
-        app:layout_constraintBottom_toTopOf="@+id/mapView2"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent" />
+            android:id="@+id/onYourWay"
+            android:layout_width="69dp"
+            android:layout_height="21dp"
+            android:layout_marginStart="128dp"
+            android:text="Leave in "
+            app:layout_constraintStart_toStartOf="parent"
+            tools:layout_editor_absoluteY="146dp"
+            app:layout_constraintEnd_toStartOf="@+id/textView4" android:layout_marginEnd="8dp"
+            app:layout_constraintHorizontal_bias="0.434"/>
+    <TextView
+            android:text="4 minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/flightDelayNumber" app:layout_constraintEnd_toEndOf="parent"
+            android:layout_marginEnd="112dp" app:layout_constraintTop_toBottomOf="@+id/arrivalNumber"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintVertical_bias="1.0"
+            android:textStyle="bold"
+    />
+    <TextView
+            android:text="20:00"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/departureNumber" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/departure" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.019" android:layout_marginTop="12dp"
+            app:layout_constraintTop_toBottomOf="@+id/btn_NewPickUp"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="22:15"
+            android:layout_width="wrap_content"
+            android:layout_height="17dp"
+            android:id="@+id/arrivalNumber" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="8dp"
+            app:layout_constraintStart_toEndOf="@+id/arrival" android:layout_marginStart="8dp"
+            app:layout_constraintHorizontal_bias="0.213"
+            app:layout_constraintTop_toBottomOf="@+id/departureNumber"
+            android:textStyle="bold"/>
+    <TextView
+            android:text="22 minutes"
+            android:layout_width="wrap_content"
+            android:layout_height="16dp"
+            android:id="@+id/textView4" app:layout_constraintEnd_toEndOf="parent" android:layout_marginEnd="112dp"
+            app:layout_constraintBottom_toTopOf="@+id/mapView2" android:layout_marginBottom="8dp"
+            android:textStyle="bold"/>
 </android.support.constraint.ConstraintLayout>
